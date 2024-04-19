@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta
+			name="viewport"
+			content="width=device-width, initial-scale=1.0" />
+		<title>Grow your business Arepa Studios</title>
+		<link
+			rel="stylesheet"
+			href="index.css " />
+	</head>
+	<body>
+		<header>
+			<nav>
+				<div class="logo">Arepa Logo</div>
+				<ul class="nav-links">
+					<li><a href="#home">Home</a></li>
+					<li><a href="#services">Services</a></li>
+					<li><a href="#portfolio">Portfolio</a></li>
+					<li><a href="#blog">Blog</a></li>
+					<li><a href="#contact">Contact</a></li>
+				</ul>
+				<div class="auth-buttons">
+					<a
+						href="#login"
+						class="log-in"
+						>Log In</a
+					>
+					<a
+						href="#signup"
+						class="sign-up"
+						>Sign Up</a
+					>
+				</div>
+			</nav>
+		</header>
+		<main>
+			<section id="main">
+				<section
+					id="home-section"
+					class="hero">
+					<h1>Arepa Studios</h1>
+					<p>We help you create products your customers will love 🚀</p>
+					<div class="cta-buttons">
+						<a
+							href="#get-started"
+							class="btn-get-started"
+							>Get Started</a
+						>
+					</div>
+				</section>
+				<section class="hero-image-section">
+					<img
+						src="hero-image.png"
+						alt="working-to-help-you"
+						id="hero-image" />
+				</section>
+			</section>
+			<h2>Our Services</h2>
+			<section id="table-section">
+				<table id="services-table">
+					<thead>
+						<tr>
+							<th>SEO</th>
+							<th>other</th>
+							<th>other</th>
+						</tr>
+					</thead>
+					<tbody>
+						<tr>
+							<td>SEO Optimization</td>
+							<td>SEO Optimization</td>
+							<td>SEO Optimization</td>
+						</tr>
+						<tr>
+							<td>SEO Audits</td>
+							<td>SEO Audits</td>
+							<td>SEO Audits</td>
+						</tr>
+						<tr>
+							<td>Local SEO</td>
+							<td>Local SEO</td>
+							<td>Local SEO</td>
+						</tr>
+						<tr>
+							<td>A/B Testing</td>
+							<td>A/B Testing</td>
+							<td>A/B Testing</td>
+						</tr>
+						<tr>
+							<td>Content Marketing</td>
+							<td>Content Marketing</td>
+							<td>Content Marketing</td>
+						</tr>
+						<tr>
+							<td>Web design</td>
+							<td>Web design</td>
+							<td>Web design</td>
+						</tr>
+					</tbody>
+				</table>
+			</section>
+			<h2>Get Started</h2>
+			<section id="form">
+				<form
+					action="/service"
+					method="get"
+					id="contact-form">
+					<div>
+						<label for="name-input">What's your name?</label>
+						<input
+							type="text"
+							id="name-input"
+							placeholder="Maggie"
+							name="name"
+							required="true"
+							minlength="3"
+							maxlength="30" />
+					</div>
+					<div>
+						<label for="service-input"
+							>Which service are you interested in?</label
+						>
+						<input
+							type="checkbox"
+							id="seo-audit"
+							name="seo-audit" />
+						<label for="seo-audit">SEO Audit</label>
+						<input
+							type="checkbox"
+							id="ab-testing"
+							name="ab-testing" />
+						<label for="ab-testing">A/B Testing</label>
+					</div>
+					<div>
+						<p>What's your preferred contact method</p>
+						<select
+							name="contact-method"
+							id="contact-method"
+							required="true">
+							<option value="">--Please select an option below</option>
+							<option value="Call">Call</option>
+							<option value="Text">Text</option>
+						</select>
+					</div>
+					<div>
+						<label for="seo-importance">How important is SEO for you?</label>
+						<input
+							type="range"
+							name="seo-importance"
+							id="seo-importance"
+							min="1"
+							max="10"
+							required="true" />
+					</div>
+					<button type="submit">Submit</button>
+				</form>
+			</section>
+		</main>
+		<footer></footer>
+	</body>
+</html>
