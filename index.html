@@ -36,29 +36,73 @@
 			</nav>
 		</header>
 		<main>
-			<section id="main">
-				<section
-					id="home-section"
-					class="hero">
-					<h1>Arepa Studios</h1>
-					<p>We help you create products your customers will love 🚀</p>
-					<div class="cta-buttons">
-						<a
-							href="#get-started"
-							class="btn-get-started"
-							>Get Started</a
-						>
+			<section
+				id="Hero"
+				class="Section">
+				<div class="Container">
+					<div id="hero-container">
+						<div
+							id="home-section"
+							class="hero">
+							<h1>Arepa Studios</h1>
+							<p>We help you create products your customers will love 🚀</p>
+							<div class="cta-buttons">
+								<a
+									href="#get-started"
+									class="btn-cta"
+									>Get Started</a
+								>
+							</div>
+						</div>
+						<div class="hero-image-section">
+							<img
+								src="assets/hero-image.png"
+								alt="working-to-help-you"
+								id="hero-image" />
+						</div>
 					</div>
-				</section>
-				<section class="hero-image-section">
-					<img
-						src="hero-image.png"
-						alt="working-to-help-you"
-						id="hero-image" />
-				</section>
+				</div>
 			</section>
 			<h2>Our Services</h2>
-			<section id="table-section">
+			<section
+				class="Section"
+				id="cards section">
+				<div class="Container">
+					<div class="card-holder">
+						<div
+							class="card-div"
+							id="card-one">
+							<img
+								src="assets/lightbulb-ideation.webp"
+								alt="product ideation card"
+								class="product-image" />
+							<h3>Product Ideation</h3>
+							<p>We facilitate the conception of ideas.</p>
+						</div>
+						<div
+							class="card-div"
+							id="card-two">
+							<img
+								src="assets/launch.webp"
+								alt="product launch card"
+								class="product-image" />
+							<h3>Product Launch</h3>
+							<p>A blueprint to launch profitably.</p>
+						</div>
+						<div
+							class="card-div"
+							id="card-three">
+							<img
+								src="assets/pmf.webp"
+								alt="product Market-fit card"
+								class="product-image" />
+							<h3>Product Market-fit</h3>
+							<p>We help you find product-market fit.</p>
+						</div>
+					</div>
+				</div>
+			</section>
+			<!-- <section id="table-section">
 				<table id="services-table">
 					<thead>
 						<tr>
@@ -100,61 +144,46 @@
 						</tr>
 					</tbody>
 				</table>
-			</section>
+			</section> -->
 			<h2>Get Started</h2>
 			<section id="form">
 				<form
 					action="/service"
 					method="get"
-					id="contact-form">
-					<div>
-						<label for="name-input">What's your name?</label>
-						<input
-							type="text"
-							id="name-input"
-							placeholder="Maggie"
-							name="name"
-							required="true"
-							minlength="3"
-							maxlength="30" />
+					id="contact-form"
+					class="form">
+					<div id="form-div">
+						<div class="form-input-div">
+							<label for="name-input">What's your name?</label>
+							<input
+								type="text"
+								id="name-input"
+								placeholder="Maggie"
+								name="name"
+								required="true"
+								minlength="3"
+								maxlength="30" />
+						</div>
+						<div
+							id="contact-method-div"
+							class="form-input-div">
+							<p>What's your preferred contact method</p>
+							<select
+								name="contact-method"
+								id="contact-method"
+								required="true">
+								<option value="">--Please select an option below</option>
+								<option value="Call">Call</option>
+								<option value="Text">Text</option>
+							</select>
+						</div>
+						<button
+							type="submit"
+							class="btn-cta"
+							id="form-button">
+							Submit
+						</button>
 					</div>
-					<div>
-						<label for="service-input"
-							>Which service are you interested in?</label
-						>
-						<input
-							type="checkbox"
-							id="seo-audit"
-							name="seo-audit" />
-						<label for="seo-audit">SEO Audit</label>
-						<input
-							type="checkbox"
-							id="ab-testing"
-							name="ab-testing" />
-						<label for="ab-testing">A/B Testing</label>
-					</div>
-					<div>
-						<p>What's your preferred contact method</p>
-						<select
-							name="contact-method"
-							id="contact-method"
-							required="true">
-							<option value="">--Please select an option below</option>
-							<option value="Call">Call</option>
-							<option value="Text">Text</option>
-						</select>
-					</div>
-					<div>
-						<label for="seo-importance">How important is SEO for you?</label>
-						<input
-							type="range"
-							name="seo-importance"
-							id="seo-importance"
-							min="1"
-							max="10"
-							required="true" />
-					</div>
-					<button type="submit">Submit</button>
 				</form>
 			</section>
 		</main>
