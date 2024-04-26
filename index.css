@@ -102,6 +102,7 @@ h2 {
 	position: relative;
 	bottom: 5px;
 	right: 5px;
+	transition: 1s;
 }
 .hero-image-section {
 	text-align: center;
