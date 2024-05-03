@@ -14,13 +14,33 @@
 		<header>
 			<section class="Section">
 				<div class="Container">
-					<nav class="nav">
+					<nav id="nav-bar">
 						<div class="logo">Arepa Logo</div>
 						<ul class="nav-links">
 							<li><a href="#home">Home</a></li>
 							<li><a href="#services">Services</a></li>
 							<li><a href="#portfolio">Portfolio</a></li>
-							<li><a href="#blog">Blog</a></li>
+							<li><a href="#contact">Contact</a></li>
+						</ul>
+						<div class="auth-buttons">
+							<a
+								href="#login"
+								class="log-in"
+								>Log In</a
+							>
+							<a
+								href="#signup"
+								class="sign-up"
+								>Sign Up</a
+							>
+						</div>
+					</nav>
+					<nav id="burguer-nav-bar">
+						<div class="logo">Arepa Logo</div>
+						<ul class="nav-links">
+							<li><a href="#home">Home</a></li>
+							<li><a href="#services">Services</a></li>
+							<li><a href="#portfolio">Portfolio</a></li>
 							<li><a href="#contact">Contact</a></li>
 						</ul>
 						<div class="auth-buttons">
@@ -80,8 +100,8 @@
 								src="assets/lightbulb-ideation.webp"
 								alt="product ideation card"
 								class="product-image" />
-							<h3>Product Ideation</h3>
-							<p>We facilitate the conception of ideas.</p>
+							<h3>Product Validation</h3>
+							<p>We facilitate the validation of ideas.</p>
 						</div>
 						<div
 							class="card-div"
@@ -91,7 +111,7 @@
 								alt="product launch card"
 								class="product-image" />
 							<h3>Product Launch</h3>
-							<p>A blueprint to launch profitably.</p>
+							<p>A blueprint to launch the right.</p>
 						</div>
 						<div
 							class="card-div"
@@ -100,15 +120,16 @@
 								src="assets/pmf.webp"
 								alt="product Market-fit card"
 								class="product-image" />
-							<h3>Product Market-fit</h3>
-							<p>We help you find product-market fit.</p>
+							<h3>A/B Testing</h3>
+							<p>We help you launch A/B tests.</p>
 						</div>
 					</div>
 				</div>
 			</section>
-
 			<h2>Get Started</h2>
-			<section id="form">
+			<section
+				id="form"
+				class="Section">
 				<form
 					action="/service"
 					method="get"

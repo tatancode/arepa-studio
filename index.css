@@ -1,4 +1,3 @@
-/* Reset some basic elements */
 body,
 h1,
 h2,
@@ -8,19 +7,21 @@ ul {
 	padding: 0;
 }
 
-/* Basic styling */
 body {
 	font-family: 'Arial', sans-serif;
 	line-height: 1.6;
 	color: #333;
 }
-/* Navigation styling */
+
 nav {
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
 	padding: 1em 2em;
 	background-color: #fff;
+	/* position: fixed; */
+	top: 0px;
+	left: 0px;
 }
 h1,
 h2 {
@@ -63,7 +64,9 @@ h2 {
 	background-color: black;
 	color: white;
 }
-/* Hero section styling */
+.Section {
+	margin: 60px 60px;
+}
 .hero {
 	text-align: center;
 	padding: 4em 1em;
@@ -79,7 +82,7 @@ h2 {
 .hero p {
 	margin-bottom: 2em;
 	font-size: 1.5em;
-	color: #666;
+	color: #665;
 }
 
 .cta-buttons {
@@ -100,9 +103,10 @@ h2 {
 .btn-cta:hover {
 	background-color: gray;
 	position: relative;
-	bottom: 5px;
-	right: 5px;
-	transition: 1s;
+	bottom: 1%;
+	right: 1px;
+	transition: background-color 1s ease;
+	transform: rotate(360deg);
 }
 .hero-image-section {
 	text-align: center;
@@ -112,7 +116,6 @@ h2 {
 	display: grid;
 	grid-template-columns: [one] 1fr [two] 300px [three] 300px [four] 300px [five] 1fr;
 	justify-content: center;
-	margin: 50px;
 }
 .card-div {
 	display: flex;
@@ -129,11 +132,6 @@ h2 {
 .product-image {
 	max-width: 200px;
 }
-.nav {
-	position: fixed;
-	top: 0px;
-	left: 0px;
-}
 #hero-image {
 	max-width: 675px;
 	padding: 0.75em 2em;
@@ -141,6 +139,9 @@ h2 {
 #main {
 	display: flex;
 	justify-content: center;
+}
+#burguer-nav-bar {
+	display: none;
 }
 #table-section {
 	display: flex;
@@ -153,7 +154,6 @@ h2 {
 	justify-content: center;
 	text-align: center;
 	padding: 1em 1em;
-	margin-bottom: 20px;
 }
 #form-div {
 	display: flex;
@@ -170,7 +170,11 @@ h2 {
 	flex-direction: row;
 	justify-content: center;
 	align-items: center;
-	margin: 60px 0 20px 0;
+	/* margin: 60px 0 20px 0; */
+}
+#home-section {
+	display: flex;
+	flex-direction: column;
 }
 #card-one {
 	grid-column-start: two;
@@ -200,17 +204,37 @@ h2 {
 	border-radius: 4px;
 	box-sizing: border-box;
 }
+#text-div {
+	display: flex;
+	justify-content: center;
+}
 @media (max-width: 768px) {
-	/* Adjust styles for mobile responsiveness */
-	.nav-links,
-	.auth-buttons {
-		display: none; /* Hide on mobile, show as dropdown, or turn into hamburger menu */
+	nav {
+		display: flex;
+		flex-direction: column;
+		justify-content: space-between;
+		align-items: center;
+		padding: 1em 2em;
+		background-color: #fff;
+		/* position: fixed; */
+		top: 0px;
+		left: 0px;
+	}
+	nav ul,
+	nav div {
+		display: flex;
+		flex-direction: column;
 	}
 
 	.hero {
 		padding: 2em 1em;
 	}
-
+	#hero-container {
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+	}
 	.cta-buttons {
 		flex-direction: column;
 	}
@@ -218,7 +242,16 @@ h2 {
 		max-width: 150px;
 	}
 }
-@media (max-width: 430px) {
+@media (max-width: 435px) {
+	#hero-container {
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+	}
+	#hero-image {
+		max-width: 390px;
+	}
 	.card-holder {
 		grid-template-columns: [one] 120px [two] 120px [three] 120px;
 	}
@@ -237,5 +270,17 @@ h2 {
 	}
 	#card-three {
 		grid-column-start: three;
+	}
+	#form-div {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		width: 200px;
+		margin-bottom: 10px;
+	}
+	.form-input-div {
+		display: flex;
+		flex-direction: column;
+		margin: 30px;
 	}
 }
