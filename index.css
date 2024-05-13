@@ -6,7 +6,10 @@ ul {
 	margin: 0;
 	padding: 0;
 }
-
+ol,
+ul {
+	list-style: none;
+}
 body {
 	font-family: 'Arial', sans-serif;
 	line-height: 1.6;
@@ -14,9 +17,6 @@ body {
 }
 
 nav {
-	display: flex;
-	justify-content: space-between;
-	align-items: center;
 	padding: 1em 2em;
 	background-color: #fff;
 	/* position: fixed; */
@@ -92,7 +92,8 @@ h2 {
 }
 
 .btn-cta {
-	padding: 0.75em 2em;
+	padding: 10px 25px;
+	margin: 25px 0;
 	text-decoration: none;
 	border-radius: 5px;
 	border: none;
@@ -132,6 +133,78 @@ h2 {
 .product-image {
 	max-width: 200px;
 }
+.Container,
+.panel_container {
+	display: flex;
+	justify-content: center;
+}
+.panel {
+	background-color: white;
+	box-shadow: 5px 5px 5px 10px #e6e3e33f;
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	padding: 15px 0;
+	border-radius: 5px;
+	width: 100%;
+	max-width: 960px;
+	text-align: center;
+	/* text-transform: uppercase; */
+}
+.pricing-plan {
+	border-bottom: none;
+	border-right: 1px solid #e1f1ff;
+	padding-bottom: 55px;
+	margin: 15px 15px;
+}
+.pricing-plan:last-child {
+	border-right: none;
+}
+.pricing-img {
+	max-width: 200px;
+	border-radius: 5px;
+	margin: 25px 5px;
+}
+.pricing-header {
+	color: #888;
+	font-weight: 600;
+	letter-spacing: 1px;
+}
+.pricing-features {
+	margin: 50px 0 25px;
+}
+.pricing-features-item {
+	font-weight: 600;
+	letter-spacing: 1px;
+	font-size: 12px;
+	line-height: 1.5;
+	padding: 15px 0;
+	border-top: 1px solid #e1f1ff;
+}
+.pricing-features-item:last-child {
+	border-bottom: 1px solid #e1f1ff;
+}
+.pricing-price {
+	color: #888;
+	display: block;
+	font-size: 32px;
+	font-weight: 700;
+	margin: 15px;
+}
+.pricing-button {
+	border: 1px solid #e1f1ff;
+	background-color: #e1f1ff;
+	color: #348efe;
+	border-radius: 5px;
+	padding: 10px 20px;
+	text-decoration: none;
+	margin: 25px 0;
+	transition: all 200ms ease-in-out;
+}
+.pricing-button:hover,
+.pricing-button:focus {
+	background-color: #9dd1ff;
+}
 #hero-image {
 	max-width: 675px;
 	padding: 0.75em 2em;
@@ -139,6 +212,9 @@ h2 {
 #main {
 	display: flex;
 	justify-content: center;
+}
+#nav-bar {
+	display: flex;
 }
 #burguer-nav-bar {
 	display: none;
@@ -190,6 +266,8 @@ h2 {
 }
 #contact-method {
 	padding: 12px 20px;
+	border: 1px solid #ccc;
+	border-radius: 4px;
 	box-sizing: border-box;
 }
 #form-button {
@@ -251,6 +329,49 @@ h2 {
 	}
 	#hero-image {
 		max-width: 390px;
+	}
+	.panel {
+		background-color: white;
+		box-shadow: 5px 5px 5px 10px #e6e3e33f;
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		padding: 15px 0;
+		border-radius: 5px;
+		width: 100%;
+		max-width: 960px;
+		text-align: center;
+		/* text-transform: uppercase; */
+	}
+	.pricing-plan {
+		flex-direction: column;
+		border-bottom: 1px solid e1f1ff;
+		padding-bottom: 55px;
+		margin: 15px 0;
+	}
+	.pricing-plan:last-child {
+		border-bottom: none;
+	}
+	.pricing-img {
+		max-width: 200px;
+		border-radius: 5px;
+		margin: 25px 5px;
+	}
+	.pricing-header {
+		color: #888;
+		font-weight: 600;
+		letter-spacing: 1px;
+	}
+	.pricing-features {
+		margin: 50px 0 25px;
+	}
+	.pricing-features-item {
+		font-weight: 600;
+		letter-spacing: 1px;
+		font-size: 12px;
+		line-height: 1.5;
+		padding: 15px 0;
+		border-top: 1px solid #e1f1ff;
 	}
 	.card-holder {
 		grid-template-columns: [one] 120px [two] 120px [three] 120px;
