@@ -6,10 +6,12 @@ ul {
 	margin: 0;
 	padding: 0;
 }
+
 ol,
 ul {
 	list-style: none;
 }
+
 body {
 	font-family: 'Arial', sans-serif;
 	line-height: 1.6;
@@ -23,26 +25,32 @@ nav {
 	top: 0px;
 	left: 0px;
 }
+
 h1,
 h2 {
 	display: flex;
 	justify-content: center;
 }
+
 .logo {
 	font-size: 1.5em;
 	color: #000;
 }
+
 .nav-links {
 	list-style: none;
 	display: flex;
 }
+
 .nav-links li {
 	padding: 0 1em;
 }
+
 .nav-links a {
 	text-decoration: none;
 	color: #000;
 }
+
 .auth-buttons {
 	display: flex;
 }
@@ -64,9 +72,11 @@ h2 {
 	background-color: black;
 	color: white;
 }
+
 .Section {
 	margin: 60px 60px;
 }
+
 .hero {
 	text-align: center;
 	padding: 4em 1em;
@@ -101,6 +111,7 @@ h2 {
 	cursor: pointer;
 	background-color: #000;
 }
+
 .btn-cta:hover {
 	background-color: gray;
 	position: relative;
@@ -109,15 +120,18 @@ h2 {
 	transition: background-color 1s ease;
 	transform: rotate(360deg);
 }
+
 .hero-image-section {
 	text-align: center;
 	padding: 0.75em 2em;
 }
+
 .card-holder {
 	display: grid;
 	grid-template-columns: [one] 1fr [two] 300px [three] 300px [four] 300px [five] 1fr;
 	justify-content: center;
 }
+
 .card-div {
 	display: flex;
 	max-width: 200px;
@@ -130,14 +144,17 @@ h2 {
 	padding: 28px;
 	box-shadow: 10px 5px 5px #e6e3e33f;
 }
+
 .product-image {
 	max-width: 200px;
 }
+
 .Container,
 .panel_container {
 	display: flex;
 	justify-content: center;
 }
+
 .panel {
 	background-color: white;
 	box-shadow: 5px 5px 5px 10px #e6e3e33f;
@@ -151,27 +168,33 @@ h2 {
 	text-align: center;
 	/* text-transform: uppercase; */
 }
+
 .pricing-plan {
 	border-bottom: none;
 	padding-bottom: 55px;
 	margin: 15px 15px;
 }
+
 .pricing-plan:last-child {
 	border-right: none;
 }
+
 .pricing-img {
 	max-width: 200px;
 	border-radius: 5px;
 	margin: 25px 5px;
 }
+
 .pricing-header {
 	color: #888;
 	font-weight: 600;
 	letter-spacing: 1px;
 }
+
 .pricing-features {
 	margin: 50px 0 25px;
 }
+
 .pricing-features-item {
 	font-weight: 600;
 	letter-spacing: 1px;
@@ -180,9 +203,11 @@ h2 {
 	padding: 15px 0;
 	border-top: 1px solid #ecefef;
 }
+
 .pricing-features-item:last-child {
 	border-bottom: 1px solid #ecefef;
 }
+
 .pricing-price {
 	color: #888;
 	display: block;
@@ -190,6 +215,7 @@ h2 {
 	font-weight: 700;
 	margin: 15px;
 }
+
 .pricing-button {
 	border: 1px solid #e1f1ff;
 	background-color: #e1f1ff;
@@ -200,48 +226,88 @@ h2 {
 	margin: 25px 0;
 	transition: all 200ms ease-in-out;
 }
+
 .pricing-button:hover,
 .pricing-button:focus {
 	background-color: #9dd1ff;
 }
+
+.footer {
+	background-color: black;
+	color: white;
+	text-align: center;
+	padding: 20px 0;
+}
+
+.footer-content {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	gap: 50px;
+}
+
+.footer-logo {
+	max-width: 100px;
+	/* Adjust size as needed */
+}
+
+.footer-links a {
+	color: white;
+	text-decoration: none;
+	margin: 0 15px;
+	font-size: 16px;
+}
+
+.footer-links a:hover {
+	text-decoration: underline;
+}
+
 #hero-image {
 	max-width: 675px;
 	padding: 0.75em 2em;
 }
+
 #main {
 	display: flex;
 	justify-content: center;
 }
+
 #nav-bar {
 	display: flex;
 	flex-direction: row;
 	justify-content: space-between;
 }
+
 #burguer-nav-bar {
 	display: none;
 }
+
 #table-section {
 	display: flex;
 	justify-content: center;
 	text-align: center;
 	padding: 4em 1em;
 }
+
 #form {
 	display: flex;
 	justify-content: center;
 	text-align: center;
 	padding: 1em 1em;
 }
+
 #form-div {
 	display: flex;
 	flex-direction: row;
 	margin-bottom: 10px;
 }
+
 .form-input-div {
 	display: flex;
 	flex-direction: column;
 	margin: 30px;
 }
+
 #hero-container {
 	display: flex;
 	flex-direction: row;
@@ -249,33 +315,41 @@ h2 {
 	align-items: center;
 	/* margin: 60px 0 20px 0; */
 }
+
 #home-section {
 	display: flex;
 	flex-direction: column;
 }
+
 #card-one {
 	grid-column-start: two;
 }
+
 #card-two {
 	grid-column-start: three;
 }
+
 #card-three {
 	grid-column-start: four;
 }
+
 #contact-method-div {
 	width: 300px;
 }
+
 #contact-method {
 	padding: 12px 20px;
 	border: 1px solid #ccc;
 	border-radius: 4px;
 	box-sizing: border-box;
 }
+
 #form-button {
 	max-width: 100px;
 	max-height: 50px;
 	margin-top: 50px;
 }
+
 #name-input {
 	width: 300px;
 	padding: 12px 20px;
@@ -283,10 +357,12 @@ h2 {
 	border-radius: 4px;
 	box-sizing: border-box;
 }
+
 #text-div {
 	display: flex;
 	justify-content: center;
 }
+
 @media (max-width: 768px) {
 	nav {
 		display: flex;
@@ -299,6 +375,7 @@ h2 {
 		top: 0px;
 		left: 0px;
 	}
+
 	nav ul,
 	nav div {
 		display: flex;
@@ -308,19 +385,23 @@ h2 {
 	.hero {
 		padding: 2em 1em;
 	}
+
 	#hero-container {
 		display: flex;
 		flex-direction: column;
 		justify-content: center;
 		align-items: center;
 	}
+
 	.cta-buttons {
 		flex-direction: column;
 	}
+
 	.product-image {
 		max-width: 150px;
 	}
 }
+
 @media (max-width: 435px) {
 	#hero-container {
 		display: flex;
@@ -328,9 +409,11 @@ h2 {
 		justify-content: center;
 		align-items: center;
 	}
+
 	#hero-image {
 		max-width: 390px;
 	}
+
 	.panel {
 		background-color: white;
 		box-shadow: 5px 5px 5px 10px #e6e3e33f;
@@ -344,31 +427,38 @@ h2 {
 		text-align: center;
 		/* text-transform: uppercase; */
 	}
+
 	.btn-cta {
 		max-width: 350px;
 		margin: 25px 50px;
 	}
+
 	.pricing-plan {
 		flex-direction: column;
 		padding-bottom: 55px;
 		margin: 15px 0;
 	}
+
 	.pricing-plan:last-child {
 		border-bottom: none;
 	}
+
 	.pricing-img {
 		max-width: 200px;
 		border-radius: 5px;
 		margin: 25px 5px;
 	}
+
 	.pricing-header {
 		color: #888;
 		font-weight: 600;
 		letter-spacing: 1px;
 	}
+
 	.pricing-features {
 		margin: 50px 0 25px;
 	}
+
 	.pricing-features-item {
 		font-weight: 600;
 		letter-spacing: 1px;
@@ -377,25 +467,32 @@ h2 {
 		padding: 15px 0;
 		border-top: 1px solid #ecefef;
 	}
+
 	.card-holder {
 		grid-template-columns: [one] 120px [two] 120px [three] 120px;
 	}
+
 	.card-div {
 		width: 100px;
 		padding: 15px;
 	}
+
 	.product-image {
 		max-width: 100px;
 	}
+
 	#card-one {
 		grid-column-start: one;
 	}
+
 	#card-two {
 		grid-column-start: two;
 	}
+
 	#card-three {
 		grid-column-start: three;
 	}
+
 	#form-div {
 		display: flex;
 		flex-direction: column;
@@ -403,6 +500,7 @@ h2 {
 		width: 200px;
 		margin-bottom: 10px;
 	}
+
 	.form-input-div {
 		display: flex;
 		flex-direction: column;

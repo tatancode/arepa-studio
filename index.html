@@ -1,236 +1,161 @@
 <!DOCTYPE html>
 <html lang="en">
-	<head>
-		<meta charset="UTF-8" />
-		<meta
-			name="viewport"
-			content="width=device-width, initial-scale=1.0" />
-		<title>Grow your business Arepa Studios</title>
-		<link
-			rel="stylesheet"
-			href="index.css " />
-	</head>
-	<body>
-		<header>
-			<nav id="nav-bar">
-				<div class="logo">Arepa Logo</div>
-				<ul class="nav-links">
-					<li><a href="#home">Home</a></li>
-					<li><a href="#services">Services</a></li>
-					<li><a href="#portfolio">Portfolio</a></li>
-					<li><a href="#contact">Contact</a></li>
-				</ul>
-				<div class="auth-buttons">
-					<a
-						href="#login"
-						class="log-in"
-						>Log In</a
-					>
-					<a
-						href="#signup"
-						class="sign-up"
-						>Sign Up</a
-					>
-				</div>
-			</nav>
-			<nav id="burguer-nav-bar">
-				<div class="logo">Arepa Logo</div>
-				<ul class="nav-links">
-					<li><a href="#home">Home</a></li>
-					<li><a href="#services">Services</a></li>
-					<li><a href="#portfolio">Portfolio</a></li>
-					<li><a href="#contact">Contact</a></li>
-				</ul>
-				<div class="auth-buttons">
-					<a
-						href="#login"
-						class="log-in"
-						>Log In</a
-					>
-					<a
-						href="#signup"
-						class="sign-up"
-						>Sign Up</a
-					>
-				</div>
-			</nav>
-		</header>
-		<main>
-			<section
-				id="Hero"
-				class="Section">
-				<div class="Container">
-					<div id="hero-container">
-						<div
-							id="home-section"
-							class="hero">
-							<h1>Arepa Studios</h1>
-							<p>We help you create products your customers will love 🚀</p>
-							<div class="cta-buttons">
-								<a
-									href="#get-started"
-									class="btn-cta"
-									>Get Started</a
-								>
-							</div>
-						</div>
-						<div class="hero-image-section">
-							<img
-								src="assets/hero-image.png"
-								alt="working-to-help-you"
-								id="hero-image" />
-						</div>
-					</div>
-				</div>
-			</section>
-			<h2>Our Services</h2>
-			<section
-				class="Section"
-				id="cards section">
-				<div class="Container">
-					<div class="card-holder">
-						<div
-							class="card-div"
-							id="card-one">
-							<img
-								src="assets/lightbulb-ideation.webp"
-								alt="product ideation card"
-								class="product-image" />
-							<h3>Product Validation</h3>
-							<p>We facilitate the validation of ideas.</p>
-						</div>
-						<div
-							class="card-div"
-							id="card-two">
-							<img
-								src="assets/launch.webp"
-								alt="product launch card"
-								class="product-image" />
-							<h3>Product Launch</h3>
-							<p>A blueprint to launch the right.</p>
-						</div>
-						<div
-							class="card-div"
-							id="card-three">
-							<img
-								src="assets/pmf.webp"
-								alt="product Market-fit card"
-								class="product-image" />
-							<h3>A/B Testing</h3>
-							<p>We help you launch A/B tests.</p>
-						</div>
-					</div>
-				</div>
-			</section>
-			<h2>Get Started</h2>
-			<section
-				id="form"
-				class="Section">
-				<form
-					action="/service"
-					method="get"
-					id="contact-form"
-					class="form">
-					<div id="form-div">
-						<div class="form-input-div">
-							<label for="name-input">What's your name?</label>
-							<input
-								type="text"
-								id="name-input"
-								placeholder="Maggie"
-								name="name"
-								required="true"
-								minlength="3"
-								maxlength="30" />
-						</div>
-						<div
-							id="contact-method-div"
-							class="form-input-div">
-							<p>What's your preferred contact method</p>
-							<select
-								name="contact-method"
-								id="contact-method"
-								required="true">
-								<option value="">--Please select an option below</option>
-								<option value="Call">Call</option>
-								<option value="Text">Text</option>
-							</select>
-						</div>
-						<button
-							type="submit"
-							class="btn-cta"
-							id="form-button">
-							Submit
-						</button>
-					</div>
-				</form>
-			</section>
-			<section class="Section">
-				<div class="Container panel-container">
-					<div class="panel pricing-table">
-						<div class="pricing-plan">
-							<img
-								src="assets/lightbulb-ideation.webp"
-								alt=""
-								class="pricing-img" />
-							<h2 class="pricing-header">Personal</h2>
-							<ul class="pricing-features">
-								<li class="pricing-features-item">Custom domains</li>
-								<li class="pricing-features-item">
-									Sleeps after 30 mins of inactivity
-								</li>
-							</ul>
-							<span class="pricing-price">Free</span>
-							<a
-								href="#/"
-								class="pricing-button"
-								>Sign up</a
-							>
-						</div>
 
-						<div class="pricing-plan">
-							<img
-								src="assets/launch.webp"
-								alt=""
-								class="pricing-img" />
-							<h2 class="pricing-header">Small team</h2>
-							<ul class="pricing-features">
-								<li class="pricing-features-item">Never sleeps</li>
-								<li class="pricing-features-item">
-									Multiple workers for more powerful apps
-								</li>
-							</ul>
-							<span class="pricing-price">$150</span>
-							<a
-								href="#/"
-								class="pricing-button is-featured"
-								>Free trial</a
-							>
-						</div>
+<head>
+	<meta charset="UTF-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<title>Grow your business Arepa Studios</title>
+	<link rel="stylesheet" href="index.css " />
+</head>
 
-						<div class="pricing-plan">
-							<img
-								src="assets/pmf.webp"
-								alt=""
-								class="pricing-img" />
-							<h2 class="pricing-header">Enterprise</h2>
-							<ul class="pricing-features">
-								<li class="pricing-features-item">Dedicated</li>
-								<li class="pricing-features-item">
-									Simple horizontal scalability
-								</li>
-							</ul>
-							<span class="pricing-price">$400</span>
-							<a
-								href="#/"
-								class="pricing-button"
-								>Free trial</a
-							>
+<body>
+	<header>
+		<nav id="nav-bar">
+			<div class="logo">Arepa Logo</div>
+			<ul class="nav-links">
+				<li><a href="#home">Home</a></li>
+				<li><a href="#services">Services</a></li>
+				<li><a href="#portfolio">Portfolio</a></li>
+				<li><a href="#contact">Contact</a></li>
+			</ul>
+			<div class="auth-buttons">
+				<a href="#login" class="log-in">Log In</a>
+				<a href="#signup" class="sign-up">Sign Up</a>
+			</div>
+		</nav>
+		<nav id="burguer-nav-bar">
+			<div class="logo">Arepa Logo</div>
+			<ul class="nav-links">
+				<li><a href="#home">Home</a></li>
+				<li><a href="#services">Services</a></li>
+				<li><a href="#portfolio">Portfolio</a></li>
+				<li><a href="#contact">Contact</a></li>
+			</ul>
+			<div class="auth-buttons">
+				<a href="#login" class="log-in">Log In</a>
+				<a href="#signup" class="sign-up">Sign Up</a>
+			</div>
+		</nav>
+	</header>
+	<main>
+		<section id="Hero" class="Section">
+			<div class="Container">
+				<div id="hero-container">
+					<div id="home-section" class="hero">
+						<h1>Arepa Studios</h1>
+						<p>We help you create products your customers will love 🚀</p>
+						<div class="cta-buttons">
+							<a href="#get-started" class="btn-cta">Get Started</a>
 						</div>
 					</div>
+					<div class="hero-image-section">
+						<img src="assets/hero-image.png" alt="working-to-help-you" id="hero-image" />
+					</div>
 				</div>
-			</section>
-		</main>
-		<footer></footer>
-	</body>
+			</div>
+		</section>
+		<h2>Our Services</h2>
+		<section class="Section" id="cards section">
+			<div class="Container">
+				<div class="card-holder">
+					<div class="card-div" id="card-one">
+						<img src="assets/lightbulb-ideation.webp" alt="product ideation card" class="product-image" />
+						<h3>Product Validation</h3>
+						<p>We facilitate the validation of ideas.</p>
+					</div>
+					<div class="card-div" id="card-two">
+						<img src="assets/launch.webp" alt="product launch card" class="product-image" />
+						<h3>Product Launch</h3>
+						<p>A blueprint to launch the right.</p>
+					</div>
+					<div class="card-div" id="card-three">
+						<img src="assets/pmf.webp" alt="product Market-fit card" class="product-image" />
+						<h3>A/B Testing</h3>
+						<p>We help you launch A/B tests.</p>
+					</div>
+				</div>
+			</div>
+		</section>
+		<h2>Get Started</h2>
+		<section id="form" class="Section">
+			<form action="/service" method="get" id="contact-form" class="form">
+				<div id="form-div">
+					<div class="form-input-div">
+						<label for="name-input">What's your name?</label>
+						<input type="text" id="name-input" placeholder="Maggie" name="name" required="true"
+							minlength="3" maxlength="30" />
+					</div>
+					<div id="contact-method-div" class="form-input-div">
+						<p>What's your preferred contact method</p>
+						<select name="contact-method" id="contact-method" required="true">
+							<option value="">--Please select an option below</option>
+							<option value="Call">Call</option>
+							<option value="Text">Text</option>
+						</select>
+					</div>
+					<button type="submit" class="btn-cta" id="form-button">
+						Submit
+					</button>
+				</div>
+			</form>
+		</section>
+		<section class="Section">
+			<div class="Container panel-container">
+				<div class="panel pricing-table">
+					<div class="pricing-plan">
+						<img src="assets/lightbulb-ideation.webp" alt="" class="pricing-img" />
+						<h2 class="pricing-header">Personal</h2>
+						<ul class="pricing-features">
+							<li class="pricing-features-item">Custom domains</li>
+							<li class="pricing-features-item">
+								Sleeps after 30 mins of inactivity
+							</li>
+						</ul>
+						<span class="pricing-price">Free</span>
+						<a href="#/" class="pricing-button">Sign up</a>
+					</div>
+
+					<div class="pricing-plan">
+						<img src="assets/launch.webp" alt="" class="pricing-img" />
+						<h2 class="pricing-header">Small team</h2>
+						<ul class="pricing-features">
+							<li class="pricing-features-item">Never sleeps</li>
+							<li class="pricing-features-item">
+								Multiple workers for more powerful apps
+							</li>
+						</ul>
+						<span class="pricing-price">$150</span>
+						<a href="#/" class="pricing-button is-featured">Free trial</a>
+					</div>
+
+					<div class="pricing-plan">
+						<img src="assets/pmf.webp" alt="" class="pricing-img" />
+						<h2 class="pricing-header">Enterprise</h2>
+						<ul class="pricing-features">
+							<li class="pricing-features-item">Dedicated</li>
+							<li class="pricing-features-item">
+								Simple horizontal scalability
+							</li>
+						</ul>
+						<span class="pricing-price">$400</span>
+						<a href="#/" class="pricing-button">Free trial</a>
+					</div>
+				</div>
+			</div>
+		</section>
+	</main>
+
+	<footer class="footer">
+		<div class="footer-content">
+			<img src="logo.png" alt="Arepa Studio" class="footer-logo">
+			<div class="footer-links">
+				<a href="#home">Home</a>
+				<a href="#about">About</a>
+				<a href="#services">Services</a>
+				<a href="#contact">Contact</a>
+			</div>
+		</div>
+	</footer>
+</body>
+
 </html>
